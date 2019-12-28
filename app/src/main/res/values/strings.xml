@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BountyHunter</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_planet">Select Planet:</string>
+    <string name="list_hunters">List Hunters</string>
+    <string name="view_hunters">View Hunters</string>
+    <string name="bounty_hunt">Go Hunt</string>
+    <string name="select_bounty">Select Bounty:</string>
+    <string name="start_hunt">Start Bounty Hunt</string>
+    <string name="hunt_successful">Hunt Successful!</string>
+</resources>
