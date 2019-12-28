@@ -1,6 +1,5 @@
 David McDonald
 CSCI 5661 - Topics in Mobile Application Development
-Homework 3
 
     For this assignment, I took the idea of a 'treasure hunter' app and adopted it to the Star Wars universe to make a 'Bounty Hunter' app. I implemented the Star Wars API in order to accomplish this (https://swapi.co/), using a publicly available android API to make the necessary RESTful API calls. Make sure that your computer is connected to the internet before attempting to evaluate this app.
     Unfortunately, we haven't yet covered ASyncTasks in class, so it was a serious burden to try to delay the execution of the main activity's onCreate method while the data is loaded from online. I settled for the far from perfect solution of giving the app a 20 second delay on startup. If, for some reason this isn't enough time on your machine, adjust the delay in MainActivity -> onCreate -> handler.postDelayed().
@@ -9,5 +8,3 @@ Homework 3
     Bells and Whistles:
         1. REST API calls: This took a tremendous amount of time to implement, and is a large part of why this assignment is being turned in late. Unfortunately, once I latch on to an idea I sometimes can't let it go, often to my detriment. That being said, I'm proud that I managed to get it somewhat functional, given my total lack of experience working with REST API calls. I'm sure the code violates best practices in myriad ways, could use major refactoring, and is buggy in ways I have yet to discover. For the most part, though, it works and provides the user with an interesting way to explore the Star Wars Universe!
         2. Multiple Spinners: In my 'Bounty Hunt' fragment, the first Spinner allows the user to select a planet on which to hunt for bounties. Once the user has made their selection, the second spinner is populated with the names of all of the available bounties on that planet. Once the user has selected their bounty target, a short summary of that target's information is loaded into the TextView beneath it, and the user is ready to begin their bounty hunt. Upon completeion of the bounty hunt, a Snackbar appears, allowing the user to go to the Detail Fragment for that Bounty Hunter, where they can see that the bounty they just captured has been added to their inventory. That bounty is subsequently removed from the list of available targets, and will no longer appear in the target selection Spinner.
-
-        Famous last words... It works on my machine, but please let me know if you have any questions, concerns, or issues with getting it to run!
